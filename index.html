@@ -10,7 +10,11 @@
   <body>
     <div id="main-container">
       <div id="main-left">
-        <div id="banner"></div>
+        <img id="bg-img" src="./images/main-image.jpg" />
+        <div id="banner">
+          <img id="focus" src="./images/focus.png" />
+          <p id="logo-name">FOCUS</p>
+        </div>
       </div>
       <div id="main-right">
         <div id="top">
@@ -20,7 +24,38 @@
             now to get started. You know you want to.
           </p>
         </div>
-        <div id="middle"><form action=""></form></div>
+        <div id="middle">
+          <form action="example.com/path" method="post">
+            <div>
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" />
+            </div>
+            <div>
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div>
+              <label for="phone_number">Phone Number</label>
+              <input type="tel" id="phone_number" name="phone_number" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div>
+              <label for="confirm_password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm_password"
+                name="confirm_password"
+              />
+            </div>
+          </form>
+        </div>
         <div id="bottom">
           <button>Create Account</button>
           <p>Already have an account?<a href="">Log in</a></p>

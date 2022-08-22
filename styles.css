@@ -1,0 +1,61 @@
+/* * {
+  border: 1px solid black;
+} */
+html {
+  height: 100vh;
+}
+body {
+  width: 100vw;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+
+#main-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+#main-left {
+  position: relative;
+  background: blue;
+  flex-basis: 40%;
+}
+
+#main-right {
+  background: green;
+  flex-basis: 60%;
+}
+#bg-img {
+  object-fit: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#focus {
+  opacity: 100%;
+  height: 80%;
+  width: auto;
+}
+#banner {
+  position: absolute;
+  top: 25%;
+  left: 0px;
+  height: 20%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#logo-name {
+  color: white;
+  font-size: 40px;
+  font-size: 4vw;
+  overflow: scroll;
+}
