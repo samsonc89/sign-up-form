@@ -20,12 +20,10 @@ body {
 
 #main-left {
   position: relative;
-  background: blue;
   flex-basis: 40%;
 }
 
 #main-right {
-  background: green;
   flex-basis: 60%;
 }
 #bg-img {
