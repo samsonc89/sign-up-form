@@ -26,6 +26,9 @@ body {
 #main-right {
   flex-basis: 60%;
   background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #bg-img {
   object-fit: cover;
@@ -59,6 +62,14 @@ body {
   overflow: scroll;
 }
 
+#top {
+  margin-bottom: 50px;
+}
 #middle {
   background-color: white;
+  flex-basis: 30%;
+}
+
+#bottom {
+  margin-top: 20px;
 }
