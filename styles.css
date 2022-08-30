@@ -89,6 +89,7 @@ form {
 
 form > div {
   width: 40%;
+  font-size: 14px;
 }
 label {
   font-size: smaller;
