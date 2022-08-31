@@ -94,3 +94,7 @@ form > div {
 label {
   font-size: smaller;
 }
+
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
