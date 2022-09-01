@@ -89,6 +89,7 @@ form {
 
 form > div {
   width: 40%;
+  height: auto;
   font-size: 14px;
 }
 label {
@@ -97,4 +98,20 @@ label {
 
 input:invalid:not(:placeholder-shown) {
   border-color: red;
+}
+
+input:valid {
+  background: url(images/check.svg);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+form > div > p {
+  margin: 0;
+  color: red;
+  font-size: 10px;
+}
+
+.hidden {
+  opacity: 0;
 }
