@@ -10,12 +10,12 @@ confirmPwd.addEventListener("focusout", () => {
       confirmPwd.insertAdjacentHTML(
         "afterend",
         `    <p class="validPwd">
-      Password must be <br />
-      At least 6 characters<br />
-      At least 1 uppercase character<br />
-      At least 1 lowercase character<br />
-      At least 1 number
-    </p>`
+        Password must be <br />
+        At least 6 characters<br />
+        At least 1 uppercase character<br />
+        At least 1 lowercase character<br />
+        At least 1 number
+      </p>`
       );
     }
   } else {
@@ -32,6 +32,21 @@ confirmPwd.addEventListener("focusout", () => {
 
 pwd.addEventListener("focusout", () => {
   if (pwd.checkValidity() == false) {
-    console.log("please type correct pwd");
+    if (document.querySelector(".validPwd") == null) {
+      pwd.insertAdjacentHTML(
+        "afterend",
+        `    <p class="validPwd">
+        Password must be <br />
+        At least 6 characters<br />
+        At least 1 uppercase character<br />
+        At least 1 lowercase character<br />
+        At least 1 number
+      </p>`
+      );
+    }
+  } else {
+    if (document.querySelector(".validPwd") != null) {
+      document.querySelector(".validPwd").remove();
+    }
   }
 });
