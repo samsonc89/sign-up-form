@@ -100,7 +100,7 @@ input:invalid:not(:placeholder-shown) {
   border-color: red;
 }
 
-input:valid {
+input:valid :not(:placeholder-shown) {
   background: url(images/check.svg);
   background-size: 15px;
   background-repeat: no-repeat;
