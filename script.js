@@ -21,10 +21,8 @@ confirmPwd.addEventListener("focusout", () => {
   } else {
     if (pwd.value !== confirmPwd.value) {
       document.querySelector(".validPwd").remove();
-      confirmPwd.setCustomValidity("Passwords must match");
       matchMsg.classList.remove("hidden");
     } else {
-      confirmPwd.setCustomValidity("");
       matchMsg.classList.add("hidden");
     }
   }
