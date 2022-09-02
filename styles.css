@@ -26,7 +26,7 @@ body {
 
 #main-right {
   flex-basis: 60%;
-  background-image: linear-gradient(315deg, #000000, #ffffff);
+  background-image: linear-gradient(315deg, #908f8d, #ffffff);
   display: flex;
   flex-direction: column;
   justify-content: center;
