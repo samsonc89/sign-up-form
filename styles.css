@@ -109,3 +109,11 @@ form > div > p {
 .hidden {
   opacity: 0;
 }
+
+button {
+  width: 160px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: none;
+}
