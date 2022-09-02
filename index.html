@@ -31,14 +31,24 @@
           </p>
         </div>
         <div class="right-side" id="middle">
-          <form action="example.com/path" method="post">
+          <form action="example.com/path" method="post" id="form1">
             <div>
               <label for="first_name">First Name</label><br />
-              <input type="text" id="first_name" name="first_name" />
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                placeholder=" "
+              />
             </div>
             <div>
               <label for="last_name">Last Name</label><br />
-              <input type="text" id="last_name" name="last_name" />
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                placeholder=" "
+              />
             </div>
             <div>
               <label for="email">*Email</label><br />
@@ -52,7 +62,12 @@
             </div>
             <div>
               <label for="phone_number">Phone Number</label><br />
-              <input type="tel" id="phone_number" name="phone_number" />
+              <input
+                type="tel"
+                id="phone_number"
+                name="phone_number"
+                placeholder=" "
+              />
             </div>
             <div>
               <label for="password">*Password</label><br />
@@ -64,13 +79,6 @@
                 placeholder=" "
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
               />
-              <p id="validPwd" class="hidden">
-                Password must be <br />
-                At least 6 characters<br />
-                At least 1 uppercase character<br />
-                At least 1 lowercase character<br />
-                At least 1 number
-              </p>
             </div>
             <div>
               <label for="confirm_password">*Confirm Password</label><br />
@@ -87,7 +95,9 @@
           </form>
         </div>
         <div class="right-side" id="bottom">
-          <button>Create Account</button>
+          <button type="submit" form="form1" value="Submit">
+            Create Account
+          </button>
           <p>Already have an account?<a href="">Log in</a></p>
         </div>
       </div>
